@@ -11,7 +11,10 @@ public class Customers
     private long custcode;
     private String custcity;
     private String custcountry;
+
+    @Column(nullable = false)
     private String custname;
+
     private String grade;
     private double openingamt;
     private double outstandingamt;
@@ -20,6 +23,13 @@ public class Customers
     private double receiveamt;
     private String workingarea;
 
+    @ManyToOne
+    @JoinColumn(name = "agentcode", nullable = false)
+    private Agents agents;
+
+    @OneToMany
+    @JoinColumn(name = "ordnum", nullable = false)
+    private Orders orders;
 
     public Customers()
     {

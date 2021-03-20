@@ -15,6 +15,10 @@ public class Agents
     private String phone;
     private String workingarea;
 
+    @OneToMany
+    @JoinColumn(name = "custcode", nullable = true)
+    private Customers customers;
+
     public Agents()
     {
 

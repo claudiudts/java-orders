@@ -4,7 +4,7 @@ package com.lambdaschool.orders.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "orders")
+@Table(name = "orders") // this will be red for ever
 public class Orders
 {
     @Id
@@ -13,6 +13,11 @@ public class Orders
     private double advanceamount;
     private double orderamount;
     private String orderdescription;
+
+
+    @OneToMany
+    @JoinColumn(name = "custcode", nullable = true)
+    private Customers customers;
 
     public Orders()
     {
