@@ -15,5 +15,32 @@ public class Payment
     @Column(nullable = false)
     private String type;
 
+    public Payment()
+    {
+
+    }
+
+    public Payment(long paymentid, String type)
+    {
+        this.paymentid = paymentid;
+        this.type = type;
+    }
+
+    public long getPaymentid() {
+        return paymentid;
+    }
+
+    public void setPaymentid(long paymentid) {
+        this.paymentid = paymentid;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     //ORDERPAYMENTS is the join table
 }

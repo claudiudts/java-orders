@@ -16,6 +16,52 @@ public class Order
     private double advanceamount;
     private String orderdescription;
 
+    public Order()
+    {
+
+    }
+
+    public Order(long ordnum, double ordamount, double advanceamount, String orderdescription)
+    {
+        this.ordnum = ordnum;
+        this.ordamount = ordamount;
+        this.advanceamount = advanceamount;
+        this.orderdescription = orderdescription;
+    }
+
+    public long getOrdnum() {
+        return ordnum;
+    }
+
+    public void setOrdnum(long ordnum) {
+        this.ordnum = ordnum;
+    }
+
+    public double getOrdamount() {
+        return ordamount;
+    }
+
+    public void setOrdamount(double ordamount) {
+        this.ordamount = ordamount;
+    }
+
+    public double getAdvanceamount() {
+        return advanceamount;
+    }
+
+    public void setAdvanceamount(double advanceamount) {
+        this.advanceamount = advanceamount;
+    }
+
+    public String getOrderdescription() {
+        return orderdescription;
+    }
+
+    public void setOrderdescription(String orderdescription) {
+        this.orderdescription = orderdescription;
+    }
+
+
     //ORDERS has ManyToOne with CUSTOMERS
     //ORDERS has ManyToMany with PAYMENTS
 
