@@ -22,7 +22,8 @@
 //@Transactional
 //@Component
 //public class SeedData
-//        implements CommandLineRunner {
+//        implements CommandLineRunner
+//{
 //    /**
 //     * Connects the customer table to this SeedData method
 //     */
@@ -64,7 +65,8 @@
 //    @Transactional
 //    @Override
 //    public void run(String[] args) throws
-//            Exception {
+//            Exception
+//    {
 //        Payment pay1 = new Payment("Cash");
 //        Payment pay2 = new Payment("Gift Card");
 //        Payment pay3 = new Payment("Credit Card");
@@ -554,12 +556,14 @@
 //
 //        Faker dataFaker = new Faker(new Locale("en-US"));
 //        Set<String> customerNames = new HashSet<>();
-//        for (int i = 0; i < 100; i++) {
+//        for (int i = 0; i < 100; i++)
+//        {
 //            customerNames.add(dataFaker.name()
 //                    .fullName());
 //        }
 //
-//        for (String theName : customerNames) {
+//        for (String theName : customerNames)
+//        {
 //            String custcity = dataFaker.address()
 //                    .city();
 //            String tempWorkingarea = dataFaker.address()
@@ -600,7 +604,8 @@
 //                    a10);
 //
 //            int randomNumber = random.nextInt(10); // random number 0 through 9
-//            for (int i = 0; i < randomNumber; i++) {
+//            for (int i = 0; i < randomNumber; i++)
+//            {
 //                double tempGetOrdamount = dataFaker.number()
 //                        .randomDouble(2,
 //                                0,
